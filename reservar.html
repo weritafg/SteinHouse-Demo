@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title data-i18n="book.meta.title">Reservar una suite — Steinhaus Home Suites</title>
+<meta name="description" data-i18n="book.meta.desc" content="Solicite una suite Steinhaus en la Ciudad de México en cuatro pasos. Confirmamos disponibilidad el mismo día por teléfono, WhatsApp o correo. Sin pago en línea." />
+<link rel="canonical" href="https://www.steinhaus.com.mx/reservar.html" />
+<link rel="alternate" hreflang="es" href="https://www.steinhaus.com.mx/reservar.html" />
+<link rel="alternate" hreflang="en" href="https://www.steinhaus.com.mx/reservar.html?lang=en" />
+<link rel="alternate" hreflang="x-default" href="https://www.steinhaus.com.mx/reservar.html" />
+<meta name="robots" content="noindex,follow" />
+<meta name="theme-color" content="#038d1d" />
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="lang-es">
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="header header--over" id="site-header">
+  <div class="header__inner">
+    <a class="brand" href="index.html" aria-label="Steinhaus Home Suites — Inicio">
+      <span class="brand__plate"><img class="brand__logo" src="assets/img/logo-transparent@2x.png" alt="Steinhaus Home Suites" width="193" height="66" /></span>
+    </a>
+    <nav class="header__nav" aria-label="Principal">
+      <a class="navlink" href="index.html" data-i18n="nav.home">Inicio</a>
+      <a class="navlink" href="suites.html" data-i18n="nav.suites">Suites</a>
+      <a class="navlink" href="zonas.html" data-i18n="nav.zones">Zonas</a>
+      <a class="navlink" href="nosotros.html" data-i18n="nav.about">Nosotros</a>
+      <a class="navlink" href="contacto.html" data-i18n="nav.contact">Contacto</a>
+      <a class="navlink navlink--panel" href="reservar.html" data-i18n="nav.book">Reservar</a>
+      <a class="navlink navlink--panel" href="tel:+525552510814" data-cfg-tel data-i18n="nav.call">Llamar</a>
+    </nav>
+    <div class="header__actions">
+      <a class="header__call" href="tel:+525552510814" data-cfg-tel aria-label="Llamar a Steinhaus">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        <span class="header__call-label" data-cfg-tel-display>55 5251 0814</span>
+      </a>
+      <a class="btn btn--sm header__book" href="reservar.html" aria-current="page" data-i18n="nav.book">Reservar</a>
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button class="lang__btn" data-lang="es" type="button" aria-pressed="true">ES</button>
+        <button class="lang__btn" data-lang="en" type="button" aria-pressed="false">EN</button>
+      </div>
+      <button class="navtoggle" type="button" aria-label="Menú" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="pagehero">
+  <div class="pagehero__media"><img src="assets/img/hero-lg.jpg" alt="Sala iluminada de una suite ejecutiva Steinhaus." width="1800" height="1150" /></div>
+  <div class="container">
+    <nav class="crumbs" aria-label="Ruta">
+      <a href="index.html" data-i18n="nav.home">Inicio</a> <span aria-hidden="true">/</span>
+      <span aria-current="page" data-i18n="nav.book">Reservar</span>
+    </nav>
+    <h1 data-i18n="book.hero.h">Reservar una suite</h1>
+    <p class="lede" data-i18n="book.hero.p">Cuatro pasos breves. Al final envía la solicitud por WhatsApp o correo y confirmamos disponibilidad el mismo día — no hay pago en línea.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="booking">
+      <aside class="booking__aside">
+        <ol class="stepper">
+          <li data-state="active" data-i18n="book.step1">Fechas y huéspedes</li>
+          <li data-i18n="book.step2">Zona y suite</li>
+          <li data-i18n="book.step3">Sus datos</li>
+          <li data-i18n="book.step4">Revisar y enviar</li>
+        </ol>
+        <div class="booking__summary">
+          <p class="label" data-i18n="book.summary.h">Su solicitud</p>
+          <div data-booking-summary></div>
+        </div>
+      </aside>
+
+      <form class="booking__form" data-booking novalidate>
+
+        <!-- Paso 1 -->
+        <fieldset class="step" data-active data-step="1">
+          <legend class="visually-hidden">Fechas y huéspedes</legend>
+          <h2 data-i18n="book.s1.h">¿Cuándo desea hospedarse?</h2>
+          <p class="lede" data-i18n="book.s1.p">Las fechas aproximadas están bien — confirmaremos la disponibilidad exacta con usted.</p>
+
+          <div class="calendar-card" data-calendar>
+            <div class="calendar-card__head">
+              <div>
+                <p class="calendar-card__title" data-i18n="book.cal.title">Seleccione sus fechas</p>
+                <p class="calendar-card__desc" data-i18n="book.cal.desc">Elija primero la llegada y después la salida.</p>
+              </div>
+              <div class="calendar-card__nav">
+                <button type="button" class="calendar-card__navbtn" data-cal-prev aria-label="Mes anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 6-6 6 6 6"/></svg></button>
+                <button type="button" class="calendar-card__navbtn" data-cal-next aria-label="Mes siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 6 6 6-6 6"/></svg></button>
+              </div>
+            </div>
+            <div class="calendar-card__months" data-cal-months></div>
+            <div class="calendar-card__foot">
+              <p class="calendar-card__range" data-cal-summary></p>
+              <button type="button" class="calendar-card__clear" data-cal-clear data-i18n="book.cal.clear">Borrar</button>
+            </div>
+          </div>
+          <input type="hidden" id="checkin" name="checkin" required />
+          <input type="hidden" id="checkout" name="checkout" required />
+          <span class="field__error" data-cal-error data-i18n="book.err.required" style="display:none;margin-top:.6rem">Este campo es obligatorio</span>
+
+          <div class="form-grid" style="margin-top:1.75rem">
+            <div class="field">
+              <label for="adults" data-i18n="book.f.adults">Adultos</label>
+              <select id="adults" name="adults">
+                <option>1</option><option selected>2</option><option>3</option><option>4</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="children" data-i18n="book.f.children">Menores</label>
+              <select id="children" name="children">
+                <option selected>0</option><option>1</option><option>2</option><option>3</option>
+              </select>
+            </div>
+          </div>
+          <div class="step__nav">
+            <button type="button" class="btn btn--ghost" data-back hidden data-i18n="cta.back">Atrás</button>
+            <button type="button" class="btn" data-next data-i18n="cta.continue">Continuar</button>
+          </div>
+        </fieldset>
+
+        <!-- Paso 2 -->
+        <fieldset class="step" data-step="2">
+          <legend class="visually-hidden">Zona y suite</legend>
+          <h2 data-i18n="book.s2.h">¿Dónde le gustaría hospedarse?</h2>
+          <p class="lede" data-i18n="book.s2.p">Elija una zona y luego una suite. ¿No está seguro? Elija «Que Steinhaus me recomiende» y le asesoramos.</p>
+          <div class="form-grid">
+            <div class="field">
+              <label for="zone" data-i18n="book.f.zone">Zona</label>
+              <select id="zone" name="zone"></select>
+            </div>
+            <div class="field">
+              <label for="suite" data-i18n="book.f.suite">Suite</label>
+              <select id="suite" name="suite"></select>
+            </div>
+          </div>
+          <div class="step__nav">
+            <button type="button" class="btn btn--ghost" data-back data-i18n="cta.back">Atrás</button>
+            <button type="button" class="btn" data-next data-i18n="cta.continue">Continuar</button>
+          </div>
+        </fieldset>
+
+        <!-- Paso 3 -->
+        <fieldset class="step" data-step="3">
+          <legend class="visually-hidden">Sus datos</legend>
+          <h2 data-i18n="book.s3.h">¿A quién contactamos?</h2>
+          <p class="lede" data-i18n="book.s3.p">Usamos estos datos únicamente para confirmar su reservación.</p>
+          <div class="form-grid">
+            <div class="field field--full">
+              <label for="name" data-i18n="book.f.name">Nombre completo</label>
+              <input type="text" id="name" name="name" autocomplete="name" required />
+              <span class="field__error" data-i18n="book.err.required">Este campo es obligatorio</span>
+            </div>
+            <div class="field">
+              <label for="email" data-i18n="book.f.email">Correo</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+              <span class="field__error" data-i18n="book.err.email">Escriba un correo válido</span>
+            </div>
+            <div class="field">
+              <label for="phone" data-i18n="book.f.phone">Teléfono / WhatsApp</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" required />
+              <span class="field__error" data-i18n="book.err.required">Este campo es obligatorio</span>
+            </div>
+            <div class="field field--full">
+              <label for="company" data-i18n="book.f.company">Empresa (opcional)</label>
+              <input type="text" id="company" name="company" autocomplete="organization" />
+            </div>
+            <div class="field field--full">
+              <label for="notes" data-i18n="book.f.notes">¿Algo más que debamos saber? (opcional)</label>
+              <textarea id="notes" name="notes" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="step__nav">
+            <button type="button" class="btn btn--ghost" data-back data-i18n="cta.back">Atrás</button>
+            <button type="button" class="btn" data-next data-i18n="cta.continue">Continuar</button>
+          </div>
+        </fieldset>
+
+        <!-- Paso 4 -->
+        <fieldset class="step" data-step="4">
+          <legend class="visually-hidden">Revisar y enviar</legend>
+          <h2 data-i18n="book.s4.h">Revise su solicitud</h2>
+          <p class="lede" data-i18n="book.s4.p">Compruebe los datos y envíe por WhatsApp o correo.</p>
+          <dl class="review-list" data-review></dl>
+          <div class="step__nav">
+            <button type="button" class="btn btn--ghost" data-back data-i18n="cta.back">Atrás</button>
+            <div style="display:flex;gap:.75rem;flex-wrap:wrap">
+              <button type="button" class="btn" data-send-wa data-i18n="book.sendWa">Enviar por WhatsApp</button>
+              <button type="button" class="btn btn--ghost" data-send-email data-i18n="book.sendEmail">Enviar por correo</button>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Confirmación -->
+        <div class="booking-done" data-booking-done>
+          <div class="booking-done__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg></div>
+          <h2 data-i18n="book.done.h">Su solicitud está lista para enviar</h2>
+          <p class="lede" data-i18n="book.done.p">Abrimos WhatsApp o su correo con todo escrito. Envíelo y le respondemos el mismo día para confirmar disponibilidad y tarifa.</p>
+          <div class="btn-row">
+            <button type="button" class="btn" data-done-wa data-i18n="book.done.wa">Abrir WhatsApp</button>
+            <button type="button" class="btn btn--ghost" data-done-email data-i18n="book.done.email">Abrir correo</button>
+          </div>
+          <p style="margin-top:1.5rem"><span data-i18n="book.done.call">O llame ahora</span>: <a href="tel:+525552510814" data-cfg-tel style="border-bottom:1px solid var(--lime)"><span data-cfg-tel-display>55 5251 0814</span></a></p>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container container--wide">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="brand" href="index.html" aria-label="Steinhaus Home Suites">
+          <span class="brand__plate"><img class="brand__logo" src="assets/img/logo-transparent@2x.png" alt="Steinhaus Home Suites" width="193" height="66" /></span>
+        </a>
+        <p data-i18n="footer.tag">Suites ejecutivas amuebladas en las mejores zonas residenciales de la Ciudad de México. Un negocio familiar, desde el primer huésped.</p>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer.explore">Explorar</h4>
+        <ul>
+          <li><a href="suites.html" data-i18n="nav.suites">Suites</a></li>
+          <li><a href="zonas.html" data-i18n="nav.zones">Zonas</a></li>
+          <li><a href="nosotros.html" data-i18n="nav.about">Nosotros</a></li>
+          <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer.reserve">Reservaciones</h4>
+        <ul>
+          <li><a href="reservar.html" data-i18n="footer.faqLink">Reservar una suite</a></li>
+          <li><a href="#" data-cfg-wa target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="#" data-cfg-email>Correo</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer.callTitle">Línea de reservaciones</h4>
+        <ul>
+          <li><a class="footer__call" href="tel:+525552510814" data-cfg-tel><span data-cfg-tel-display>55 5251 0814</span></a></li>
+          <li data-cfg-phone-list style="display:flex;flex-direction:column;gap:.4rem;margin-top:.5rem"></li>
+          <li style="margin-top:.6rem" data-i18n="footer.hours">Atención todos los días, 9:00–19:00 (CDMX)</li>
+        </ul>
+      </div>
+    </div>
+    <dl class="footer__directory">
+      <div><dt>Polanco</dt><dd>Emilio Castelar 9<br />Suites 1, 4, 9 y 10</dd></div>
+      <div><dt>Polanco</dt><dd>Homero 829<br />Suites 2, 3, 6, 7 y 9</dd></div>
+      <div><dt>Lomas de Chapultepec</dt><dd>Palacio de Versalles<br />Suites 1 a 4</dd></div>
+      <div><dt>Reforma</dt><dd>Hamburgo 291<br />Suites 2A a 7</dd></div>
+    </dl>
+    <div class="footer__bar">
+      <span>© <span data-year>2026</span> Steinhaus Home Suites <span class="footer__credit" data-i18n="footer.credit">· Powered by Red Fall Tree VA Services</span>. <span data-i18n="footer.rights">Todos los derechos reservados.</span> · <a href="aviso-de-privacidad.html" data-i18n="footer.privacy">Aviso de privacidad</a></span>
+      <span class="footer__socials">
+        <a href="#" data-cfg-social="facebook" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 13.5h2.5l1-4H14v-2c0-1 .5-2 2-2h1.5V2.1S16 2 14.6 2C11.6 2 10 3.8 10 7v2.5H6.5v4H10V22h4v-8.5Z"/></svg></a>
+        <a href="#" data-cfg-social="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM3 9h4v12H3V9Zm7 0h3.7v1.7h.05c.5-1 1.8-2 3.75-2 4 0 4.75 2.6 4.75 6V21H21v-5.4c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4V9Z"/></svg></a>
+        <a href="#" data-cfg-social="youtube" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.5-.45-5.2a2.8 2.8 0 0 0-2-2C18.8 4.3 12 4.3 12 4.3s-6.8 0-8.55.5a2.8 2.8 0 0 0-2 2C1 8.5 1 12 1 12s0 3.5.45 5.2a2.8 2.8 0 0 0 2 2c1.75.5 8.55.5 8.55.5s6.8 0 8.55-.5a2.8 2.8 0 0 0 2-2C23 15.5 23 12 23 12ZM10 15.5v-7l6 3.5-6 3.5Z"/></svg></a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<a class="callfab" href="tel:+525552510814" data-cfg-tel aria-label="Llamar ahora">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+</a>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/magnetic.js"></script>
+<script src="assets/js/booking.js"></script>
+<script src="assets/js/calendar.js"></script>
+</body>
+</html>
