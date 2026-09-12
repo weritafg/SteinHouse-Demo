@@ -1,0 +1,13 @@
+{
+  "name": "Steinhaus Home Suites",
+  "short_name": "Steinhaus",
+  "description": "Suites ejecutivas amuebladas en la Ciudad de México.",
+  "lang": "es-MX",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#038d1d",
+  "icons": [
+    { "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
